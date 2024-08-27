@@ -20,7 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'keyboard_control = racing_bot_control.keyboard_control:main'
+            'keyboard_node = racing_bot_control.keyboard_node:main',
+            'velocity_control_node = racing_bot_control.velocity_control_node:main',
+            'bicycle_control_node = racing_bot_control.bicycle_control_node:main',
         ],
     },
 )

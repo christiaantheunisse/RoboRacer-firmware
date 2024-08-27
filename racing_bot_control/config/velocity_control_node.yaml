@@ -1,0 +1,12 @@
+/velocity_control_node:
+  ros__parameters:
+    odometry_topic: odometry/filtered
+    velocity_control_topic: goal_velocity
+    motor_topic: cmd_motor
+    
+    update_rate: 50.0
+    linear_vel_PID_params: [3.0, 0.0, 0.0]
+    # angular_vel_PID_params: [0.2, 0.0, 0.1]
+    # angular_vel_PID_params: [0.15, 0.0, 0.0]
+    angular_vel_PID_params: [0.25, 0.0, 0.0]
+    angular_velocity_limit: 0.4
